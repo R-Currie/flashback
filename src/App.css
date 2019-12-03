@@ -1,0 +1,78 @@
+.app {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+.title {
+    line-height: 1.2;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.6px;
+  }
+  
+.sub-title {
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0;
+    letter-spacing: 0.4px;
+  }
+  
+.card-list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+    height: 350px;
+  }
+  
+.buttons {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+.buttons > button {
+    color: #333333;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 20px;
+    border: 1px solid #333333;
+    margin: 8px;
+    border-radius: 100%;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  
+.buttons > button:hover {
+    opacity: 0.6;
+  }
