@@ -40,7 +40,7 @@ class App extends React.Component {
                     An interactive flashcard app.
                 </p>
                 <div className='card-list'>
-                    {this.state.cardData.map((card, index) => <Card front={card.front} key={index} />)}
+                    {this.state.cardData.map((card, index) => <Card front={card.front} back={card.back} key={index} index={index} />)}
                 </div>
                 <div className="buttons">
                     <button onClick={() => this.shuffleBackward()}>
