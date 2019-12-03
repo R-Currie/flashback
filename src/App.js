@@ -1,13 +1,9 @@
 import React from 'react';
 import Card from './Card';
 import './App.css';
+import {importedFlashCardDataFile} from './flashCardData';
 
-var cardData = { 
-    front: {
-        question: 'You may know that React was created at _________.',
-        hint: 'This company\'s site is known for being written in PHP.'
-    }
-}
+const cardData = importedFlashCardDataFile;
 
 class App extends React.Component {
     render() {
@@ -20,7 +16,7 @@ class App extends React.Component {
                     An interactive flashcard app.
                 </p>
                 <div className='card-list'>
-                    <Card question={cardData.front.question} hint={cardData.front.hint} />
+                    {cardData.map((card, index) => <Card front={card.front} key={index} />)}
                 </div>
             </div>
         );
